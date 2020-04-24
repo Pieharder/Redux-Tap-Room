@@ -1,68 +1,65 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Tap Room
 
-## Available Scripts
+#### By: Geoff Goetz | April 24th 2020
 
-In the project directory, you can run:
+## Description 
 
-### `npm start`
+This application will be a representation of a Tap-Room employee inventory tracking website. This project should allow an employee of the Tap-Room to add, monitor and track stock levels of products.
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Application based around utilizing component trees, state, and CRUD functionality in React. [Deployed on GitHub pages]()
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+## Component Diagram
+![component structure]()
 
-### `npm test`
+## Project Specifications
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Setup/Installation Requirements
 
-### `npm run build`
+#### Node install
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+##### For macOS:
+_If Homebrew is not installed on your computer already, then install Homebrew by entering the following two commands in Terminal:_
+* $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
+* $ echo 'export PATH=/usr/local/bin:$PATH' >> ~/.bash_profile
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+_Install Git with the following command:_
+* $ brew install git
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+_Next, install Node.js by entering the following command in Terminal:_
+* $ brew install node
 
-### `npm run eject`
+##### For Windows:
+_Please visit the [Node.js website](https://nodejs.org/en/download/) for installation instructions._
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+#### Install this application
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+_Clone this repository via Terminal using the following commands:_
+* _$ cd desktop_
+* _$ git clone {url to this repo}_
+* _$ cd farmers-market_
+_Then, confirm that you have navigated to the farmers-market project directory by entering "pwd" in Terminal._
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+_Next, install npm at the project's root directory via the following commands:_
+* _$ npm install_
+* _$ npm run build_
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+_Open the contents of the directory in a text editor or IDE of your choice (e.g., to open the contents of the directory in Visual Studio Code on macOS, enter the command "code ." in Terminal)._
 
-## Learn More
+## Known Bugs
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+_No known bugs at this time._
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Technologies Used
 
-### Code Splitting
+* Node.js
+* Webpack
+* npm
+* Javascript
+* jQuery
+* React
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+### License
 
-### Analyzing the Bundle Size
+[MIT](https://choosealicense.com/licenses/mit/)
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+Copyright &copy; 2020 **_Geoff Goetz_**
