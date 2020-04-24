@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 function Keg(props) {
-  let quantity = 124;
+  let quantity = '';
   if (props.quantity > 0) {
     quantity = <h3>Pints Available: {props.quantity}</h3>;
   } else {
@@ -18,5 +18,14 @@ function Keg(props) {
     </React.Fragment>
   );
 }
+
+Keg.propTypes = {
+  name: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
+  id: PropTypes.string,
+  whenMerchClicked: PropTypes.func,
+  // whenRestockClicked: PropTypes.func
+};
 
 export default Keg;
