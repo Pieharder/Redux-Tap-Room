@@ -9,7 +9,7 @@ This application will be a representation of a Tap-Room employee inventory track
 Application based around utilizing component trees, state, and CRUD functionality in React. [Deployed on GitHub pages]()
 
 ## Component Diagram
-![component structure]()
+![component structure](./src/Assets/ComponentDiagram.png)
 
 ## Project Specifications
 
