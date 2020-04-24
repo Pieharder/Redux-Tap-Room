@@ -8,6 +8,7 @@ function KegList(props) {
     <React.Fragment>
       {props.kegList.map((keg) =>
       <Keg
+      whenKegClicked={ props.onKegSelection }
       whenPourPintClicked={props.onClickingPourPint} 
       whenKegEmpty={props.onClickingDelete}
       name={keg.name}
