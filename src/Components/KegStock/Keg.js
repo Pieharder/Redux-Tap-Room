@@ -13,7 +13,7 @@ function Keg(props) {
       <h2>{props.name}</h2>
       <h4>{props.description}</h4>
       <div>{quantity}</div>
-      <button onClick={()=> props.whenPintSold(props)}>-1 Pint</button>
+      <button onClick={()=> props.whenPourPintClicked(props)}>Pour A Pint</button>
       <button onClick={() => props.whenKegEmpty(props.id)}>Remove Keg</button>
     </React.Fragment>
   );
