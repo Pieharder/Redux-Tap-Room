@@ -25,7 +25,6 @@ Keg.propTypes = {
   quantity: PropTypes.number.isRequired,
   id: PropTypes.string,
   whenMerchClicked: PropTypes.func,
-  // whenRestockClicked: PropTypes.func
 };
 
 export default Keg;
