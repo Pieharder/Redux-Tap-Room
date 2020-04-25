@@ -17,6 +17,8 @@ function Keg(props) {
           {quantity}
         </div>
       </div>
+      <button onClick={()=> props.whenPourPintClicked(props)}>Pour A Pint</button>
+      <button onClick={() => props.whenKegEmpty(props.id)}>Remove Keg</button>
     </React.Fragment>
   );
 }

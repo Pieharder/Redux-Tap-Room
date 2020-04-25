@@ -6,17 +6,18 @@ function KegDetail(props) {
 
   return(
     <React.Fragment>
-      <h1>Keg Detail</h1>
-      <h3>{keg.name}</h3>
-      <h4>{keg.description}</h4>
-      <hr />
-      
+      <h2>{keg.name}</h2>
+      <h3>{keg.description}</h3>
+      <h4>{keg.brewery}</h4>
+      <h4>{keg.price}</h4>
+      <hr />      
     </React.Fragment>
   );
 }
 
 KegDetail.propTypes = {
-  keg: PropTypes.object
+  keg: PropTypes.object,
+  onClickingDelete: PropTypes.func
 }
 
 export default KegDetail;
