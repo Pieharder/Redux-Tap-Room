@@ -2,6 +2,7 @@ import rootReducer from '../../reducers/index';
 import { createStore } from 'redux';
 import formVisibleReducer from '../../reducers/form-visible-reducer';
 import kegListReducer from '../../reducers/keg-list-reducer';
+import selectedKegReducer from '../../reducers/selected-keg-reducer';
 
 let store = createStore(rootReducer);
 
@@ -15,10 +16,15 @@ describe("rootReducer", () => {
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, { type: null }));
   });
 
+  test('that initial state of selectedKegReducer matches root reducer', ()=> {
+    expect(store.getState().selectedKeg).toEqual(selectedKegReducer(undefined, { type: null }));
+  });
+
   test('Should return default state if no action type is recognized', () => {
     expect(rootReducer({}, { type: null })).toEqual({
       masterKegList: {},
-      formVisibleOnPage: false
+      formVisibleOnPage: false,
+      selectedKeg: null
     });
   });
 
@@ -43,5 +49,18 @@ describe("rootReducer", () => {
     store.dispatch(action);
     expect(store.getState().formVisibleOnPage).toEqual(formVisibleReducer(undefined, action));
   });
-
+  
+  test('should check that selectedKegReducer matches root reducer', () => {
+    const action = {
+      type: 'CHANGE_SELECTED',
+      name: 'Dr Xenon Bloom Stout',
+      description: 'A bold and rich stout',
+      brewery: 'Mini Morty Brewing',
+      price: '$120',
+      quantity: '124',
+      id: 1 
+    };
+    store.dispatch(action);
+    expect(store.getState().selectedKeg).toEqual(selectedKegReducer(undefined, action));
+  });
 });
