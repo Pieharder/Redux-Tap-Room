@@ -1,14 +1,17 @@
-## Tap Room
+# _Tap Room Redux_
 
-#### By: Geoff Goetz | April 24th 2020
+### _Epicodus 2020 C#/React Cohort React with Redux Friday Project._
+
+#### By: Geoff Goetz | May 1st 2020
 
 ## Description 
 
-This application will be a representation of a Tap-Room employee inventory tracking website. This project should allow an employee of the Tap-Room to add, monitor and track stock levels of products.
+This application will implement redux into a Tap-Room employee inventory tracking website. This project should allow an employee of the Tap-Room to add, monitor and track stock levels of products.
 
-Application based around utilizing component trees, state, and CRUD functionality in React. [Deployed on GitHub pages]()
+Application based around utilizing component trees, state, CRUD, redux functionality in React.
 
 ## Component Diagram
+
 ![component structure](./src/Assets/ComponentDiagram.png)
 
 ## Project Specifications
@@ -55,8 +58,8 @@ _No known bugs at this time._
 * Webpack
 * npm
 * Javascript
-* jQuery
 * React
+* Redux
 
 ### License
 
