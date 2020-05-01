@@ -12,6 +12,10 @@ export default (state = {}, action) => {
         id: id
       }
     });
+    case 'SELL_KEG':
+      const updatedQuantity = state[id].Quantity - 1;
+      const updatedKegList = { ...state, [id]: { ...state[id], kegQuantity: updatedQuantity }};
+      return updatedKegList;
   case 'DELETE_KEG':
     const newState = { ...state };
     delete newState[id];
