@@ -10,7 +10,6 @@ class KegControl extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      formVisibleOnPage: false,
       selectedKeg: null,
       editing: false
     };
@@ -30,9 +29,11 @@ class KegControl extends React.Component {
         editing: false
       });
     } else {
-      this.setState(prevState => ({
-        formVisibleOnPage: !prevState.formVisibleOnPage
-      }));
+      const { dispatch } = this.props;
+      const action = {
+        type: 'TOGGLE_FORM'
+      }
+      dispatch(action);
     }
   }
 
@@ -55,8 +56,12 @@ class KegControl extends React.Component {
       id: id 
     }
     dispatch(action);
-    this.setState({formVisibleOnPage: false})
+    const action2 = {
+      type: 'TOGGLE_FORM'
+    }
+    dispatch(action2);
   }
+  
   
   handleEditingKegInList = (kegToEdit) => {
     const { dispatch } = this.props;
@@ -118,7 +123,7 @@ class KegControl extends React.Component {
     if (this.state.selectedKeg != null) {
       currentlyVisibleState = <KegDetail keg = {this.state.selectedKeg} />
       buttonText = "Return to Keg List";
-    } else if (this.state.formVisibleOnPage) {
+    } else if (this.props.formVisibleOnPage) {
       currentlyVisibleState = <NewKegForm onNewKegCreation={this.handleAddingNewKegToList} />;
       buttonText = "Return to Keg List";
     } else {
@@ -153,7 +158,8 @@ const style2 = {
 
 const mapStateToProps = state => {
   return {
-    masterKegList: state.masterKegList
+    masterKegList: state.masterKegList,
+    formVisibleOnPage: state.formVisibleOnPage
   }
 }
 
