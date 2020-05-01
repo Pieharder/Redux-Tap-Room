@@ -2,6 +2,7 @@ import React from 'react';
 import KegList from './KegStock/KegList';
 import NewKegForm from './KegStock/NewKegForm';
 import KegDetail from './KegStock/KegDetail'
+import { connect } from 'react-redux';
 
 class KegControl extends React.Component {
 
@@ -108,5 +109,7 @@ const style1 = {
 const style2 = {
 
 }
+
+KegControl = connect()(KegControl);
 
 export default KegControl;
