@@ -39,8 +39,8 @@ _Please visit the [Node.js website](https://nodejs.org/en/download/) for install
 _Clone this repository via Terminal using the following commands:_
 * _$ cd desktop_
 * _$ git clone {url to this repo}_
-* _$ cd farmers-market_
-_Then, confirm that you have navigated to the farmers-market project directory by entering "pwd" in Terminal._
+* _$ cd React-Tap-Room_
+_Then, confirm that you have navigated to the React-Tap-Room project directory by entering "pwd" in Terminal._
 
 _Next, install npm at the project's root directory via the following commands:_
 * _$ npm install_
