@@ -61,8 +61,4 @@ _No known bugs at this time._
 * React
 * Redux
 
-### License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
 Copyright &copy; 2020 **_Geoff Goetz_**
